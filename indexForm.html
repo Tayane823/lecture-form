@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestra MDM</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+<body>
+    <header class="section has-text-centered">
+        <h1 class="title is-2 spaced">Conferência MDM - Melhores do Mundo</h1>
+        <span class="subtitle ">Deseja palestrar na maior conferência de todos os tempos?! Preencha o formulário.
+        </span>
+    </header>
+
+    <hr>
+
+    <div class="section">
+        <form class="has-text-justify" action="" method="get">
+            <div class="control">
+                <div class="field">
+                    <!--NOME-->
+                    <label class="label" for="input-name">Nome Complet:</label>
+                    <input class="input" type="text" id="input-name" placeholder="Digite seu nome completo..." required>
+                </div>
+               
+                <div class="field">
+                    <!--EMAIL-->
+                    <label class="label" for="input-email">Email:</label>
+                    <input class="input" type="email" id="input-email" placeholder="Digite seu email..." required>                    
+                </div>
+               
+                <div class="field">
+                    <!--TIPO DE PALESTRA-->
+                    <fieldset>
+                    <legend><strong>Tipo de Palestra:</strong></legend>
+                    <input type="radio" name="type" id="main-stage">
+                    <label class="radio" for="main-stage">Palco Principal</label>
+                    <input type="radio" name="type" id="workshop">
+                    <label class="radio" for="workshop">workshop</label>
+                    </fieldset>                   
+                </div>
+                
+                <div class="field">
+                    <!--DESCRIÇÃO DA PALESTRA-->
+                    <label class="label" for="about">Sobre o que é a palestra:</label>
+                    <textarea name="" id="about" class="textarea"></textarea>                   
+                </div>
+                
+                <div class="field">
+                    <!--TAMANHO DA CAMISA-->
+                    <span class="subtitle is-6"><strong>Escolha o tamanho da camisa:</strong></span>
+                    <div class="select is-black is-rounded is-small">
+                        <select name="tam-option" id="tam">
+                            <option value="Pequena">Pequena</option>
+                            <option value="Média">Média</option>
+                            <option value="Grande">Grande</option>
+                            <option value="Extra Grande">Extra Grande</option>
+                        </select>
+                    </div>                    
+                </div>
+                
+                <div class="field">
+                    <!--DISPOSIÇÃO DE TEMPO-->
+                    <input type="checkbox" name="" id="i-am-free">
+                    <label class="checkbox" for="i-am-free">Estou disponível nessa Data</label>                   
+                </div>
+                
+                <div class="field"> 
+                    <!--ENVIAR-->
+                    <button type="submit" class="button is-black">Enviar</button>
+                    <button type="reset" class="button is-danger">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer has-text-centered">Criado em 05 de setembro de 2022</footer>
+    
+</body>
+</html>
